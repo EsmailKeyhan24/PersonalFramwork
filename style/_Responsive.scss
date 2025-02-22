@@ -1,0 +1,278 @@
+$width :1%;
+$padding:1%;
+$margin:1%;
+@media screen and (max-width:576px) {
+    // Small Phone 
+    @for $i from 1 to 101{
+        // ____________Created width_______________ 
+        .col-sm-#{$i}{
+            width:$width;
+        }
+        $width:$width+1;
+
+        // ________Padding_________________
+        // .p-sm-1
+        .p-sm-#{$i}{
+            padding:$padding;
+        }
+        .pt-sm-#{$i}{
+            padding-top:$padding;
+        }
+        .pr-sm-#{$i}{
+            padding-right:$padding;
+        }
+        .pb-sm-#{$i}{
+            padding-bottom:$padding;
+        }
+        .pl-sm-#{$i}{
+            padding-left:$padding;
+        }
+        $padding:$padding+1;
+        // ________Margins__________________
+        // .m-sm-1
+        .m-sm-#{$i}{
+            margin:$margin;
+        }
+        .mt-sm-#{$i}{
+            margin-top:$margin;
+        }
+        .mr-sm-#{$i}{
+            margin-right:$margin;
+        }
+        .mb-sm-#{$i}{
+            margin-bottom:$margin;
+        }
+        .ml-sm-#{$i}{
+            margin-left:$margin;
+        }
+        $margin:$margin+1;
+    }// End___Of___Loop
+
+    // _________Responsive___
+    .wraper{
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media screen and (min-width:577px) {
+    // Large Phone 
+    @for $i from 1 to 101{
+        .col-m-#{$i}{
+            width:$width;
+        }
+        $width:$width+1;
+
+       // ________Padding_________________
+        // .p-m-1
+        .p-m-#{$i}{
+            padding:$padding;
+        }
+        .pt-m-#{$i}{
+            padding-top:$padding;
+        }
+        .pr-m-#{$i}{
+            padding-right:$padding;
+        }
+        .pb-m-#{$i}{
+            padding-bottom:$padding;
+        }
+        .pl-m-#{$i}{
+            padding-left:$padding;
+        }
+        $padding:$padding+1;
+         // ________Margins__________________
+        // .m-m-1
+        .m-m-#{$i}{
+            margin:$margin;
+        }
+        .mt-m-#{$i}{
+            margin-top:$margin;
+        }
+        .mr-m-#{$i}{
+            margin-right:$margin;
+        }
+        .mb-m-#{$i}{
+            margin-bottom:$margin;
+        }
+        .ml-m-#{$i}{
+            margin-left:$margin;
+        }
+        $margin:$margin+1;
+    }// End___of___Loop
+
+     // _________Responsive___
+     .wraper-m{
+        width: 100%;
+        margin:0 auto;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    // Tablate 
+    @for $i from 1 to 101{
+        .col-md-#{$i}{
+            width:$width;
+        }
+        $width:$width+1;
+
+
+        // ________Padding_________________
+        // .p-sm-1
+        .p-md-#{$i}{
+            padding:$padding;
+        }
+        $padding:$padding+1;
+         // ________Margins__________________
+        // .m-sm-1
+        .m-md-#{$i}{
+            margin:$margin;
+        }
+        .mt-md-#{$i}{
+            margin-top:$margin;
+        }
+        .mr-md-#{$i}{
+            margin-right:$margin;
+        }
+        .mb-md-#{$i}{
+            margin-bottom:$margin;
+        }
+        .ml-md-#{$i}{
+            margin-left:$margin;
+        }
+        $margin:$margin+1;
+    }// End___Of___ Loop
+    // _________Responsive___
+    .wraper-md{
+        width: 90%;
+        margin:0 auto;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+    // LabTop   
+    @for $i from 1 to 101{
+        .col-lg-#{$i}{
+            width:$width;
+        }
+        $width:$width+1;
+
+        // ________Padding_________________
+        // .p-sm-1
+        .p-lg-#{$i}{
+            padding:$padding;
+        }
+        $padding:$padding+1;
+         // ________Margins__________________
+        // .m-lg-1
+        .m-lg-#{$i}{
+            margin:$margin;
+        }
+        .mt-lg-#{$i}{
+            margin-top:$margin;
+        }
+        .mr-lg-#{$i}{
+            margin-right:$margin;
+        }
+        .mb-lg-#{$i}{
+            margin-bottom:$margin;
+        }
+        .ml-lg-#{$i}{
+            margin-left:$margin;
+        }
+        $margin:$margin+1;
+    }//End ____OF____ Looop
+    // _________Responsive___
+    .wraper-lg{
+        width: 90%;
+        margin:0 auto;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    // Desktop 
+    @for $i from 1 to 101{
+        .col-xl-#{$i}{
+            width:$width;
+        }
+        $width:$width+1;
+
+        // ________Padding_________________
+        // .p-sm-1
+        .p-xl-#{$i}{
+            padding:$padding;
+        }
+        $padding:$padding+1;
+         // ________Margins__________________
+        // .m-xl-1
+        .m-sm-#{$i}{
+            margin:$margin;
+        }
+        .mt-xl-#{$i}{
+            margin-top:$margin;
+        }
+        .mr-xl-#{$i}{
+            margin-right:$margin;
+        }
+        .mb-xl-#{$i}{
+            margin-bottom:$margin;
+        }
+        .ml-xl-#{$i}{
+            margin-left:$margin;
+        }
+        $margin:$margin+1;
+    }//End___Of___Loop
+    // _________Responsive___
+    .wraper-xl{
+        width: 90%;
+        margin:0 auto;
+    }
+}
+
+
+
+@media screen and (min-width:1400px) {
+    // BIG Device
+    @for $i from 1 to 101{
+        .col-2xl-#{$i}{
+            width:$width;
+        }
+        $width:$width+1;
+
+        // ________Padding_________________
+        // .p-sm-1
+        .p-2xl-#{$i}{
+            padding:$padding;
+        }
+        $padding:$padding+1;
+         // ________Margins__________________
+        // .m-2xl-1
+        .m-2xl-#{$i}{
+            margin:$margin;
+        }
+        .mt-2xl-#{$i}{
+            margin-top:$margin;
+        }
+        .mr-2xl-#{$i}{
+            margin-right:$margin;
+        }
+        .mb-2xl-#{$i}{
+            margin-bottom:$margin;
+        }
+        .ml-2xl-#{$i}{
+            margin-left:$margin;
+        }
+        $margin:$margin+1;
+    }// End__Of____Loop
+    // _________Responsive___
+    .wraper-2xl{
+        width: 90%;
+        margin:0 auto;
+    }
+}

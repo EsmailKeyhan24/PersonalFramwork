@@ -1,0 +1,38 @@
+$colors:(
+    "primary":#326dee,
+    "secoundary":#1ac888,
+    "error":#d32752,
+    "info":#333,
+    "blue":#1919e6,
+    "red":#e61919,
+    "yellow":#e6e619,
+    "green":#19e635,
+    "orange":#9900ff,
+    "purple":#9900ff,
+    "gray":#808090,
+    "black":#000,
+    "white":#fff,
+);
+
+@each $key , $val in $colors{
+    // .text-blue & FOR colors
+    .text-#{$key}{
+        color:$val;
+    }   
+
+    // .bg-blue & For backgrounds 
+    .bg-#{$key}{
+        background-color:$val;
+    }
+
+    // ________FOR light colors varidations____
+    //    @for $i from 1 to 1000{
+    //         .text-#{$key}-light-#{$i}{
+    //             color:mix(black , $val , $i*10);
+    //         }
+    //         .bg-#{$key}-light-#{$i}{
+    //             background-color:mix(white , $val , $i*10);
+    //         }
+    //     }
+ 
+}
